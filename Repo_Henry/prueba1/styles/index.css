@@ -11,6 +11,7 @@ html {
 
 body {
     width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -20,7 +21,8 @@ body {
 
 header {
     background-image: url("../images/banner-bk.jpg");
-    padding: 65px 110px;
+    background-size: cover;
+    padding: 65px 114px;
 }
 
 .container-logo {
@@ -41,19 +43,534 @@ header {
 
 h1 {
     font-size: 4.3rem;
-    color: #f1f1f1;
     margin-top: 40px;
+    color: #f1f1f1;
 }
 
 header p {
     margin-top: 30px;
-    color: #f1f1f1;
     font-size: 1.2rem;
     font-weight: 200;
+    color: #f1f1f1;
 }
 
 header button {
-    margin-top: 40px;
-    padding: 15px 30px;
+    margin-top: 55px;
+    padding: 14px 32px;
     border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    color: #1f1f4f;
+    font-size: 1rem;
+    background-color: #00ffaa;
 }
+
+
+
+
+
+
+/*------------------------Sección 1 --------------------*/
+
+#section-1 {
+    padding: 95px 114px;
+}
+
+#section-1 h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #1f1f2f;
+}
+
+#section-1 .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.container-cards article {
+    width: 30%;
+    display: flex;
+    min-width: 200px;
+    max-width: 400px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-cards article div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-cards article h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2f2f3f;
+}
+
+.container-cards article p {
+    margin-top: 5px;
+    line-height: 25px;
+    color: #2f2f3f;
+}
+
+
+
+
+/*------------------------Sección 2 y Sección 3 --------------------*/
+
+#section-2 {
+    padding: 95px 114px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-image: linear-gradient(165deg, #fff 50%, #00ffaa 50%);
+}
+
+#section-3 {
+    padding: 95px 114px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #00ffaa;
+
+}
+
+#section-2 div{
+    width: 45%;
+}
+
+#section-3 div{
+    width: 45%;
+}
+
+#section-2 div h2, #section-3 div h2{
+    font-size: 2.8rem;
+    color: #1f1f2f;
+}
+
+#section-2 div p, #section-3 div p{
+    margin-top: 20px;
+    line-height: 25px;
+    color: #2f2f3f;
+}
+
+#section-2 div button, #section-3 div button{
+    margin-top: 55px;
+    padding: 14px 32px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 900;
+    color: #f1f1f1;
+    font-size: 0.9rem;
+    background-color: #0f1f3f;
+}
+
+#section-2 div img, #section-3 div img{
+    width: 100%;
+    min-width: 250px;
+    max-width: 500px;
+}
+
+
+
+
+/*------------------------Sección 4 --------------------*/
+
+#section-4 {
+    padding: 95px 114px;
+}
+
+#section-4 h2{
+    width: 100%;
+    font-size: 2.8rem;
+    text-align: center;
+    color: #1f1f2f;
+}
+
+.container-cards-price {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.container-cards-price article {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px;
+    border-radius: 5px;
+    justify-content: center;
+    color: #0f0f0f; 
+}
+
+.container-cards-price .media-card {
+    background-color: #0f1f3f;
+    color: #f1f1f1;
+}
+
+.container-cards-price article h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container-cards-price article h5 {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container-cards-price article h5 span {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.container-cards-price article ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.container-cards-price article button {
+    margin-top: 55px;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: 2px solid #0f1f3f;
+    color: #0f1f3f;
+    background-color: #fff;
+
+}
+
+.container-cards-price .media-card button {
+    background-color: #00ffaa;
+}
+
+
+
+
+
+
+
+/*------------------------Sección 5 --------------------*/
+
+#section-5 {
+    padding: 75px 114px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+/*------------------------Sección 6 --------------------*/
+
+#section-6 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 120px 114px;
+    background-size: cover;
+    background-image: url("../images/contact-bk.jpg");
+    justify-content: space-between;
+}
+
+.container-contact {
+    width: 40%;
+    color: #f1f1f1;
+}
+
+.container-contact h2{
+    font-size: 2.8rem;
+}
+
+.container-contact p {
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.container-contact ul{
+    margin-top: 25px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.container-form {
+    width: 50%;
+    justify-content: right;
+    display: flex;
+}
+
+.container-form form {
+    width: 100%;
+    max-width: 600px;
+    color: #00ffaa;
+}
+
+.inputs{
+    display: flex;
+    gap: 20px
+}
+
+.textarea{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.inputs div, .textarea  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+}
+.inputs div input, .textarea textarea {
+    background-color: transparent;
+    border: 1px solid #00ffaa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.textarea textarea {
+    height: 80px;
+}
+
+.container-form form button {
+    margin-top: 30px;
+    padding: 14px;
+    width: 100%;
+    border-radius: 30px;
+    border:none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #0f1f3f;
+    background-color: #00ffaa;
+}
+
+
+
+
+
+/*------------------------ Footer --------------------*/
+
+
+footer {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    padding: 40px 114px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f1f3f;
+    color: #f1f1f1;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+i {
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 1rem;
+    color: #0f1f3f;
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 920px) {
+    .inputs {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    footer {
+        justify-content: center;
+    }
+
+    #section-2 div img, #section-3 div img {
+        position: fixed;
+        z-index: -10;
+    }
+
+    #section-2 div, #section-3 div {
+        width: 100%;
+    }
+
+    header, #section-1, #section-2, #section-3, #section-4, #section-5, #section-6, footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    #section-6 {
+        flex-direction: column;
+    }
+
+    .container-contact{
+        width: 100%;
+    }
+
+    .container-form {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .container-cards-price article {
+        padding: 5px;
+        width: 200px;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 352px){
+    html {
+        font-size: 10px;
+    }
+
+    h1{
+        word-wrap: break-word;
+    }
+
+    .container-cards article {
+        min-width: 150px;
+    }
+
+    .container-cards article div img {
+        width: 100%;
+    
+    }
+
+    #section-5 {
+        justify-content: center;
+    }
+
+    #section-5 img {
+        max-width: 120px;
+    }
+}
+
+
+
+
+
+
+/* ------------------------ Tiempo 7h -------------------- */
+
+/* Más una hora de la hecha de esta animación */
+
+
+@keyframes quitar-letrero {
+    to{
+        z-index: -30;
+    }
+}
+
+@keyframes aparecer-numeros {
+    to {
+        font-size: 4rem;
+    }
+}
+
+@keyframes desaparecer-numeros {
+    to {
+        font-size: 0px;
+    }
+}
+
+.horas {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    z-index: 20;
+    color: #f1f1f1;
+    transition: 2s;
+    animation: quitar-letrero 1s ease forwards;
+    animation-delay: 7s;
+}
+
+h6 {
+    font-size: 5rem;
+}
+
+.n1, .n2, .n3, .n4, .n5{
+    font-size: 0px;
+}
+
+.n5 {
+    animation: 
+        aparecer-numeros 1s ease forwards 1s,
+        desaparecer-numeros 1s ease forwards 2s;
+}
+
+.n4 {
+    animation: 
+        aparecer-numeros 1s ease forwards 2s,
+        desaparecer-numeros 1s ease forwards 3s;
+}
+
+.n3 {
+    animation: 
+        aparecer-numeros 1s ease forwards 3s,
+        desaparecer-numeros 1s ease forwards 4s;
+}
+
+.n2 {
+    animation: 
+        aparecer-numeros 1s ease forwards 4s,
+        desaparecer-numeros 1s ease forwards 5s;
+}
+
+.n1 {
+    animation: 
+        aparecer-numeros 1s ease forwards 5s,
+        desaparecer-numeros 1s ease forwards 6s;
+}
+
+
+
+
+
