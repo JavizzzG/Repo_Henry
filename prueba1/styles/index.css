@@ -457,8 +457,9 @@ i {
     }
 
     .container-cards-price article {
-        padding: 5px;
+        padding: 20px;
         width: 200px;
+        align-items: center;
     }
 
 }
