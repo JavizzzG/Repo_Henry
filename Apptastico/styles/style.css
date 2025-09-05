@@ -111,6 +111,7 @@ h1 {
 .texto-link a{
     color: #f8f8f8;
     text-decoration: none;
+    font-weight: 700;
 }
 
 
@@ -255,7 +256,15 @@ h1 {
     gap: 20px;
 }
 
-.c3-div img {
+.c3-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2px;
+    box-shadow: 0 1px 3px 0#777;
+}
+
+.c3-div .c3-img img {
     width: 100px;
     height: 100px;
 }
@@ -324,6 +333,7 @@ h6 {
     color: #27f;
     font-size: 1rem;
     width: 100%;
+    font-weight: 200;
 }
 
 
@@ -331,7 +341,8 @@ h6 {
 
 
 hr {
-    margin: 0 100px; 
+    margin: 50px 100px 10px 100px; 
+    border: 1px solid #ccc;
 }
 
 footer {
@@ -339,8 +350,9 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 100px;
+    padding: 10px 100px;
     gap: 20px;
+    color: #777;
 }
 
 footer ul {
@@ -352,13 +364,13 @@ footer ul {
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1280px) {
     .container-3 article {
         width: 80%;
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 768px) {
     .iphone{
         position: absolute;
         z-index: -10;
@@ -392,5 +404,19 @@ footer ul {
     }
 }
 
+
+@media (max-width: 480px){
+    .c3-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .c3-div .c3-img {
+        width: 104px;
+        height: 104px;
+    }
+}
 
 
