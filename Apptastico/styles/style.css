@@ -41,8 +41,22 @@ nav ul{
     gap: 20px;
 }
 
+nav ul a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: 500;
+}
+
 nav ul li {
     padding: 2px 10px;
+    border-radius: 5px;
+}
+
+nav ul li:hover {
+    background-color: #39d;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .first-li{
@@ -99,6 +113,12 @@ h1 {
     background-color: #39d;
     border-top: 1px solid #aaf;
     color: #f8f8f8;
+}
+
+.button-container button:hover{
+    background-color: #17c;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .texto-link {
@@ -184,6 +204,11 @@ h1 {
     background-color: #59d;
     box-shadow: 0px 0px 1px 0px #59d;
     
+}
+
+.container-1 article div button:hover{
+    background-color: #17c;
+    cursor: pointer;
 }
 
 
@@ -323,6 +348,7 @@ h1 {
 
 .span1 {
     color: #27f;
+    cursor: pointer;
 }
 
 .span2 {
@@ -334,6 +360,7 @@ h6 {
     font-size: 1rem;
     width: 100%;
     font-weight: 200;
+    cursor: pointer;
 }
 
 
